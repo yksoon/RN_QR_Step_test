@@ -1,21 +1,33 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState, useEffect, Component } from 'react';
+import { StyleSheet, Text, View, SafeAreaView, Button, WebView, Linking } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+
+import HomeScreen from './screen/HomeScreen';
+import SecondScreen from './screen/SecondScreen';
+
+
+
+// StackNavigator 객체 생성
+const stackNav = createStackNavigator(
+  {
+    Home: { screen: HomeScreen },
+    Second: { screen: SecondScreen },
+  }
+);
+
+
+// 네비게이터 객체를 가지고 있는 AppContainer객체 생성 : 컴포넌트 객체
+const Container = createAppContainer(stackNav);
+
+export default class App extends Component {
+  render() {
+    return <Container theme="light"></Container>
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
+
