@@ -14,6 +14,7 @@
 - 백엔드 : NodeJS
 - 프론트엔드 : Javascript, React Native
 - DB : -
+- 사용 플러그인 : react-navigation, expo-sensors(Pedometer), expo-barcode-scanner
 
 ## 작업기간
 - 2021.09.20 ~ 2021.09.24 (5일)
