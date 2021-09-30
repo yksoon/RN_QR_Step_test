@@ -19,9 +19,11 @@
 - 2021.09.20 ~ 2021.09.24 (5일)
 
 ## 구동 사진
-![메인](https://user-images.githubusercontent.com/62881936/135367589-4e48f052-525c-4dcd-a364-bb796bf0b926.png)
-![QR스캔](https://user-images.githubusercontent.com/62881936/135367594-6e1b67e8-d859-4ef4-a25d-dcdbfe531b97.png)
-![스캔완료](https://user-images.githubusercontent.com/62881936/135367601-53259a99-37c6-4b5d-ae8a-adbbbcf56386.png)
+<div style="display: flex">
+<img src="https://user-images.githubusercontent.com/62881936/135367589-4e48f052-525c-4dcd-a364-bb796bf0b926.png" width="400">
+<img src="https://user-images.githubusercontent.com/62881936/135367594-6e1b67e8-d859-4ef4-a25d-dcdbfe531b97.png" width="400">
+<img src="https://user-images.githubusercontent.com/62881936/135367601-53259a99-37c6-4b5d-ae8a-adbbbcf56386.png" width="400">
+</div>
 
 ## 구현 설명
 - 테스트 및 연습용 앱이기 때문에 간결한 CSS와 컴포넌트 기반의 구조를 파악하는데 주력하였다.
